@@ -1,0 +1,27 @@
+{
+  "productName": "tauri-app",
+  "version": "0.1.0",
+  "identifier": "com.example.tauriapp",
+  "build": {
+    "beforeBuildCommand": "",
+    "beforeDevCommand": "",
+    "devUrl": "http://localhost:8000",
+    "frontendDist": "../frontend/dist"
+  },
+  "app": {
+    "security": {
+      "csp": null
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "height": 600,
+        "resizable": true,
+        "title": "Tauri App",
+        "width": 800
+      }
+    ]
+  },
+  "bundle": {},
+  "plugins": {}
+}

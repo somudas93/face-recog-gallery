@@ -1,0 +1,17 @@
+
+[package]
+name = "face-recog-gallery"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tauri = { version = "2", features = ["wry"] }
+serde = { version = "1.0", features = ["derive"] }
+rfd = { version = "0.14", features = ["xdg-portal"] }
+
+[build-dependencies]
+tauri-build = "2"
+
+[target.'cfg(not(any(target_os = "android", target_os = "ios")))'.dependencies]
+# tauri-plugin-cli depends on tauri v2; remove to avoid resolver conflicts with tauri v1.3
+
